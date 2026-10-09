@@ -1,8 +1,11 @@
-PROTOTIPO - Controle de Processos (dados ficticios) - Node.js, sem npm install
-Requisito: Node.js 22.5 ou superior. Sem acesso de administrador? Use o Node portatil (zip) em %LOCALAPPDATA%\node-portatil.
-Rodar: duplo clique em iniciar.bat  (ou: node server.js)  ->  http://127.0.0.1:8080
-Para liberar a rede local: defina HOST=0.0.0.0 no iniciar.bat.
-Logins de demonstracao: admin / admin123, operador / operador123 (tambem carla e rafael, senha operador123).
-Banco: dados.sqlite, criado no 1o acesso com 150 processos ficticios, 14 clientes e 4 empresas. Para recriar os dados, apague o arquivo.
-Painel: KPIs, graficos e filtro de periodo.  Exportar Excel: botao no Painel e em Processos
-(abas: Resumo Executivo com graficos, Processos, Por Cliente com curva ABC, Historico).
+CONTROLE DE PROCESSOS
+
+VERSAO ONLINE (pasta docs/)  - site estatico + Supabase (Postgres, login e RLS)
+  Publicacao: GitHub > Settings > Pages > Deploy from a branch > main, pasta /docs.
+  Logins de demonstracao: ver o responsavel pelo projeto (nao ficam no repositorio).
+  Contas novas: criar em Supabase > Authentication > Users; aparecem em "Usuarios" aguardando liberacao.
+  Exportar Excel: botao no Painel (Resumo Executivo com graficos, Processos, Por Cliente com curva ABC, Historico).
+
+VERSAO LOCAL (server.js)  - Node.js 22.5+ com SQLite, sem npm install
+  Rodar: duplo clique em iniciar.bat  ->  http://127.0.0.1:8080  (admin / admin123, operador / operador123)
+  Sem acesso de administrador? Use o Node portatil (zip) em %LOCALAPPDATA%\node-portatil.
